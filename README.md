@@ -18,7 +18,7 @@ By combining different slopes within one failure law and thus different stabilit
 ## Repository contents
 - MATLAB scripts:
   - *Analytical_solutions_generic_eqn_linear_friction*
-  - *DSWIS_analytical_solutions_fully_symbolic* 
+  - *Analytical solutions_DSWIS* 
   - *DSWIS_analytical_solutions_and_plots* 
   - *DSWIS_multiple_analytical_solutions_and_plots*
 - README.md
@@ -26,7 +26,7 @@ By combining different slopes within one failure law and thus different stabilit
 
 ### *Analytical_solutions_generic_eqn_linear_friction*
 Analytically solves eq. (1) with a generic linear friction segment, shows the three solution regimes: *K<sub>seg</sub> < K* - harmonic oscillations, *K<sub>seg</sub> = K* - cubic growth solution, and *K<sub>seg</sub> > K* - exponential growth solution.
-### *DSWIS_analytical_solutions_fully_symbolic*
+### *Analytical solutions_DSWIS*
 Analytically solves the 1D dynamic spring slider equation with a double slip weakening with initial strengthening (DSWIS) failure law (2). Shows full analytic solutions for each segment with initial conditions from the previous segment.
 ### *DSWIS_analytical_solutions_and_plots*
 Mostly analytically (the equation to find the duration of different phases does not have analytical solutions, thus we solve for them numerically) solves eq. (1) with DSWIS (2) and produces plots for a single set of failure law parameters: energy curves, phase diagrams, slip rate and slip vs. time for several earthquake cycles, slip and slip rate plot for different phases separately.
