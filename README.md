@@ -14,3 +14,4 @@ The slope of the failure law segment:
   - *DSWIS_analytical_solutions_and_plots* - mostly analytically (some variables are solved for numerically) solves the 1D dynamic spring slider equation with DSWIS and produces plots for a single set of failure law parameters
   - *DSWIS_multiple_analytical_solutions_and_plots* - mostly analytically (some variables are solved for numerically) solves the 1D dynamic spring slider equation with DSWIS and produces plots for several sets of failure law parameters (with the same scales) for comparison
 - README.md
+- LICENSE
