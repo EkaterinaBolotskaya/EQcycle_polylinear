@@ -4,37 +4,41 @@ close all;
 %% Analytical solutions for the generic equation (fully symbolic)
 % by Ekaterina Bolotskaya
 
-% 11/29/2021
+% 12/30/2021
 
-% This script solves the equation of motion for 1D spring-slider:
-% y" + A*y = B*t + C
-% where y - slip
-% y" - acceleration
-% t - time
-% A, B, C - constants
+% This script solves the nondim equation of motion for 1D spring-slider:
+% y" + (1-K_f/K)*y = V_0*t + d_tau_i
+% where y - nondim slip
+% y"      - nondim acceleration
+% t       - nondim time
+% K_f     - failure law segment slope
+% K       - elastic loading slope (spring stiffness)
+% V_0     - nondim load point velocity
+% d_tau_i - nondim stress difference at the beginning of the segment
+% Substitute Ke = (K-K_f)/K - effective loading slope
 
 % There are three "stability regimes" 
-% and three solution types depending on the sign of A
+% and three solution types depending on the sign of Ke
 
 %% Equation
 syms y(t) 
 Dy = diff(y);
 
-syms A real 
-syms C B v_prev real 
-% v_prev - slip rate at t = 0
+syms Ke real
+syms V_0 d_tau_i V_i real 
+% V_i - nondim slip rate at t = 0
 
-ode = diff(y,t,2) + A*y == B*t + C;
+ode = diff(y,t,2) + Ke*y == V_0*t + d_tau_i;
 cond1 = y(0) == 0;
-cond2 = Dy(0) == v_prev;
+cond2 = Dy(0) == V_i;
 
-%% A > 0
-assumeAlso(A > 0)
+%% Ke > 0
+assumeAlso(Ke > 0)
 % Solve
 ySol(t) = dsolve(ode,[cond1 cond2]);
 
 % Display
-fprintf('A > 0 \n\n y(t) = \n\n');
+fprintf('K_seg < K \n\n y(t) = \n\n');
 pretty(simplify(ySol))
 
 fprintf('y''(t) = \n\n');
@@ -43,14 +47,14 @@ pretty(simplify(diff(ySol)))
 fprintf('y"(t) = \n\n');
 pretty(simplify(diff(diff(ySol))))
 
-%% A < 0
-syms A real 
-assumeAlso(A < 0)
+%% Ke < 0
+syms Ke real 
+assumeAlso(Ke < 0)
 % Solve
 ySol(t) = dsolve(ode,[cond1 cond2]);
 
 % Display
-fprintf('A < 0 \n\n y(t) = \n\n');
+fprintf('K_seg > K \n\n y(t) = \n\n');
 pretty(simplify(ySol))
 
 fprintf('y''(t) = \n\n');
@@ -59,15 +63,15 @@ pretty(simplify(diff(ySol)))
 fprintf('y"(t) = \n\n');
 pretty(simplify(diff(diff(ySol))))
 
-%% A = 0
+%% Ke = 0
 % New equation
-ode = diff(y,t,2) == B*t + C;
+ode = diff(y,t,2) == V_0*t + d_tau_i;
 
 % Solve
 ySol(t) = dsolve(ode,[cond1 cond2]);
 
 % Display
-fprintf('A = 0 \n\n y(t) = \n\n');
+fprintf('K_seg = K \n\n y(t) = \n\n');
 pretty(simplify(ySol))
 
 fprintf('y''(t) = \n\n');
