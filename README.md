@@ -25,7 +25,7 @@ By combining different slopes within one failure law and thus different stabilit
 - LICENSE
 
 ### *Analytical_solutions_generic_eqn_linear_friction*
-Analytically solves eq. (1) with a generic linear friction segment, shows the three solution regimes: *K<sup>f</sup> < K* - harmonic oscillations, *K<sup>f</sup> = K* - cubic growth solution, and *K<sup>f</sup> > K* - exponential growth solution.
+Analytically solves non-dimensional eq. (1) with a generic linear friction segment, shows the three solution regimes: *K<sup>f</sup> < K* - harmonic oscillations, *K<sup>f</sup> = K* - cubic growth solution, and *K<sup>f</sup> > K* - exponential growth solution.
 ### *Analytical solutions_DSWIS*
 Analytically solves the 1D dynamic spring slider equation with a double slip weakening with initial strengthening (DSWIS) failure law (2). Shows full analytic solutions for each segment with initial conditions from the previous segment.
 ### *DSWIS_analytical_solutions_and_plots*
