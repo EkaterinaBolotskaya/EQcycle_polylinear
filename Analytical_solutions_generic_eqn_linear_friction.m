@@ -38,7 +38,7 @@ assumeAlso(Ke > 0)
 ySol(t) = dsolve(ode,[cond1 cond2]);
 
 % Display
-fprintf('K_seg < K \n\n y(t) = \n\n');
+fprintf('K_f < K \n\n y(t) = \n\n');
 pretty(simplify(ySol))
 
 fprintf('y''(t) = \n\n');
@@ -54,7 +54,7 @@ assumeAlso(Ke < 0)
 ySol(t) = dsolve(ode,[cond1 cond2]);
 
 % Display
-fprintf('K_seg > K \n\n y(t) = \n\n');
+fprintf('K_f > K \n\n y(t) = \n\n');
 pretty(simplify(ySol))
 
 fprintf('y''(t) = \n\n');
@@ -71,7 +71,7 @@ ode = diff(y,t,2) == V_0*t + d_tau_i;
 ySol(t) = dsolve(ode,[cond1 cond2]);
 
 % Display
-fprintf('K_seg = K \n\n y(t) = \n\n');
+fprintf('K_f = K \n\n y(t) = \n\n');
 pretty(simplify(ySol))
 
 fprintf('y''(t) = \n\n');
