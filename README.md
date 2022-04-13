@@ -35,7 +35,7 @@ Mostly analytically (same as above) solves eq. (1) with DSWIS (2) and produces p
 
 ## Reference
 Please refer the following article if you use EQcycle_polylinear for your research:
-Bolotskaya and Hager 2022 (submitted to JGR Solid Earth)  
+Bolotskaya and Hager 2022 (submitted to BSSA)  
 Please contact me (bolee@mit.edu) if you decide to use it while it is still "submitted".
 
 [![DOI](https://zenodo.org/badge/434003826.svg)](https://zenodo.org/badge/latestdoi/434003826)
