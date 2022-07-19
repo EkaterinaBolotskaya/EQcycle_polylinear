@@ -21,6 +21,7 @@ By combining different slopes within one failure law and thus different stabilit
   - *Analytical solutions_DSWIS* 
   - *DSWIS_analytical_solutions_and_plots* 
   - *DSWIS_multiple_analytical_solutions_and_plots*
+  - *Frequency_lower_bound_analytical*
 - README.md
 - LICENSE
 
@@ -29,9 +30,11 @@ Analytically solves non-dimensional eq. (1) with a generic linear friction segme
 ### *Analytical solutions_DSWIS*
 Analytically solves the 1D dynamic spring slider equation with a double slip weakening with initial strengthening (DSWIS) failure law (2). Shows full analytic solutions for each segment with initial conditions from the previous segment.
 ### *DSWIS_analytical_solutions_and_plots*
-Mostly analytically (the equation to find the duration of different phases does not have analytical solutions, thus we solve for them numerically) solves eq. (1) with DSWIS (2) and produces plots for a single set of failure law parameters: energy curves, phase diagrams, slip rate and slip vs. time for several earthquake cycles, slip and slip rate plot for different phases separately.
+Mostly analytically (the equation to find the duration of different phases does not have analytical solutions, thus we solve for them numerically) solves eq. (1) with DSWIS (2) and produces plots for a single set of failure law parameters: energy curves, phase diagrams, slip rate and slip vs. time for several earthquake cycles, slip and slip rate plot for different phases separately, spectra.
 ### *DSWIS_multiple_analytical_solutions_and_plots*
-Mostly analytically (same as above) solves eq. (1) with DSWIS (2) and produces plots for several sets of failure law parameters (with the same axis scales) for comparison. Different sets of parameters (3 to 6 failure laws) are given as examples.
+Mostly analytically (same as above) solves eq. (1) with DSWIS (2) and produces plots for several sets of failure law parameters (with the same axis scales) for comparison. Different sets of parameters (3 to 8 failure laws) are given as examples.
+### *Frequency_lower_bound_analytical*
+Estimates the lower bound on frequency of the oscillatoric solution of block slip with poly-linear friction for a range of fault lengths and slip-weakening distances, assuming the block goes through a single oscillation during the weakening process.
 
 ## Reference
 Please refer the following article if you use EQcycle_polylinear for your research:
