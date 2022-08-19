@@ -1,5 +1,6 @@
 # EQcycle_polylinear
 Scripts used for solving the equations and producing the figures in:
+
 E. Bolotskaya and B.H. Hager; A 1D Spring‐Slider Model with a Simple Poly‐Linear Failure Law Produces Rich Variations in Slip Behavior. Bull. Seismol. Soc. Am. 2022; doi: https://doi.org/10.1785/0120220052
 
 ## Background
@@ -41,5 +42,7 @@ Estimates the lower bound on frequency of the oscillatoric solution of block sli
 Please refer the following article if you use EQcycle_polylinear for your research:
 
 E. Bolotskaya and B.H. Hager; A 1D Spring‐Slider Model with a Simple Poly‐Linear Failure Law Produces Rich Variations in Slip Behavior. Bull. Seismol. Soc. Am. 2022; doi: https://doi.org/10.1785/0120220052
+
+Release on Zenodo:
 
 [![DOI](https://zenodo.org/badge/434003826.svg)](https://zenodo.org/badge/latestdoi/434003826)
