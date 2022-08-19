@@ -1,5 +1,6 @@
 # EQcycle_polylinear
-Scripts used for solving the equations and producing the figures in Bolotskaya and Hager 2022 (accepted for publication in BSSA)
+Scripts used for solving the equations and producing the figures in:
+E. Bolotskaya and B.H. Hager; A 1D Spring‐Slider Model with a Simple Poly‐Linear Failure Law Produces Rich Variations in Slip Behavior. Bull. Seismol. Soc. Am. 2022; doi: https://doi.org/10.1785/0120220052
 
 ## Background
 1D spring-slider model is often used to simulate earthquake cycles. Failure law prescribed between the block and the rough surface plays an important role in the system behavior. This repository contains MATLAB scripts that solve the equation of motion for 1D spring-slider system: 
@@ -38,7 +39,7 @@ Estimates the lower bound on frequency of the oscillatoric solution of block sli
 
 ## Reference
 Please refer the following article if you use EQcycle_polylinear for your research:
-Bolotskaya and Hager 2022 (accepted for publication in BSSA)  
-Please contact me (bolee@mit.edu) if you decide to use it while it is still "accepted".
+
+E. Bolotskaya and B.H. Hager; A 1D Spring‐Slider Model with a Simple Poly‐Linear Failure Law Produces Rich Variations in Slip Behavior. Bull. Seismol. Soc. Am. 2022; doi: https://doi.org/10.1785/0120220052
 
 [![DOI](https://zenodo.org/badge/434003826.svg)](https://zenodo.org/badge/latestdoi/434003826)
