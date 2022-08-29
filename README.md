@@ -5,7 +5,7 @@ E. Bolotskaya and B.H. Hager; A 1D Spring‐Slider Model with a Simple Poly‐Li
 
 ## Background
 1D spring-slider model is often used to simulate earthquake cycles. Failure law prescribed between the block and the rough surface plays an important role in the system behavior. This repository contains MATLAB scripts that solve the equation of motion for 1D spring-slider system: 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"/>
 ![1](https://user-images.githubusercontent.com/11836119/152701882-46d69950-61e6-4497-aaa0-c372362e27fa.png)
 with a poly-linear failure law (double slip-weakening with initial strengthening - DSWIS):
 ![2](https://user-images.githubusercontent.com/11836119/152701887-23e07e9a-df1e-4040-955a-b53654c90cd4.png)
